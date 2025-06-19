@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 //import WorkshopCard from '/components/WorkshopCard';
-import WorkshopCard from '../components/WorkshopCard';
+//import WorkshopCard from '../components/WorkshopCard';
 import { IBM_Plex_Mono, Audiowide } from 'next/font/google';
-
+import Image from "next/image";
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 
@@ -81,17 +81,25 @@ const workshops = [
     >
       {/* Image */}
       {/* <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gray-200 rounded-full mb-4 overflow-hidden"> */}
-      <div className={`w-full h-[120px] sm:h-[150px] mb-4 overflow-hidden rounded-md `}>
+      <div className={`relative w-full h-[120px] sm:h-[150px] mb-4 overflow-hidden rounded-md `}>
         {/* <img
           src={`/images/workshop${i}.png`}
           alt={`Workshop ${i}`}
           className="object-cover w-full h-full"
         /> */}
-        <img
+        {/* <img
         src={workshop.image}
         alt={workshop.title}
         className="object-cover w-full h-full"
-      />
+      /> */}
+      <Image
+    src={workshop.image}
+    alt={workshop.title}
+    fill
+    className="object-cover rounded-md"
+    sizes="(max-width: 640px) 100vw, 33vw"
+    priority // optional: remove if not needed
+  />
       </div>
 
       {/* Text */}

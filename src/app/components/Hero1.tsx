@@ -1,6 +1,6 @@
 'use client';
-import { useRef, useEffect } from "react";
-import useInView from "../hooks/useInView";
+// import { useRef, useEffect } from "react";
+// import useInView from "../hooks/useInView";
 import { motion } from 'framer-motion';
 import { Audiowide, VT323, Bebas_Neue,IBM_Plex_Mono  } from 'next/font/google';
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });

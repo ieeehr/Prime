@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { Menu, X, Download, MapPin, Phone, Mail, Instagram, Linkedin, MessageCircle, Facebook } from "lucide-react"
+//import { Menu, X, Download, MapPin, Phone, Mail, Instagram, Linkedin, MessageCircle, Facebook } from "lucide-react"
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button"
-import { useRef, useEffect } from "react";
-import useInView from "../hooks/useInView";
-import Image from "next/image";
-import { Audiowide, Bebas_Neue, Orbitron, VT323,IBM_Plex_Mono } from "next/font/google";
+//import { useRef, useEffect } from "react";
+//import useInView from "../hooks/useInView";
+//import Image from "next/image";, Bebas_Neue, Orbitron, VT323,
+import { Audiowide,IBM_Plex_Mono } from "next/font/google";
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
 const ibmPlexMono1 = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
 const audiowide = Audiowide({
@@ -13,7 +14,7 @@ const audiowide = Audiowide({
   subsets: ["latin"],
   variable: "--font-audiowide",
 });
-const bebas = Bebas_Neue({
+/*const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-bebas",
@@ -28,6 +29,7 @@ const vt323 = VT323({
   subsets: ["latin"],
   variable: "--font-vt323",
 });
+*/
 export default function About(){
     return(<section id="about prim.e" className="py-20 relative bg-about1 ">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20" />

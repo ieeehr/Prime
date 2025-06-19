@@ -1,6 +1,6 @@
 'use client';
-import { useRef, useEffect } from "react";
-import useInView from "../hooks/useInView";
+// import { useRef, useEffect } from "react";
+// import useInView from "../hooks/useInView";
 import { Orbitron } from 'next/font/google';
 import { motion } from 'framer-motion';
 import Image from 'next/image';

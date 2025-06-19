@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-
+import Image from "next/image";
 import { motion } from 'framer-motion';
 import { VT323, Audiowide, Orbitron } from 'next/font/google';
 
@@ -39,11 +39,18 @@ export default function Registration() {
     <section id="registration" className="py-20 relative overflow-hidden text-white bg-black">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none brightness-200">
-        <img
+        {/* <img
           src="/images/robot-head.png"
           alt="Robot Head"
           className="w-full h-full object-contain"
-        />
+        /> */}
+        <Image
+    src="/images/robot-head.png"
+    alt="Robot Head"
+    fill
+    className="object-contain"
+    priority
+  />
       </div>
 
       <div className="relative z-10 container mx-auto px-4">
