@@ -34,7 +34,7 @@ const workshops = [
 ];
 
   return (
-    <section id="workshops" className="relative w-full bg-hero-gradient2 py-16 px-4 overflow-hidden text-white">
+    <section id="workshops" className="relative w-full bg-hero-gradient2 sm:bg-sunmobile py-16 px-4 overflow-hidden text-white">
       {/* Cross banners */}
       <div className="absolute top-4 left-0 right-0 z-10">
         <motion.div

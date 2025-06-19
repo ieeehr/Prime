@@ -140,12 +140,39 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.bg-about1{
+/*About prime and ieee first*/
+/* .bg-about1{
   background: radial-gradient(circle at center, 
     #5F9C80 10%, 
     #7467BF 30%, 
     #374486 60%, 
     #0F074A 100%);
+} */
+ .bg-about1 {
+  animation: nucleusCycle 4s ease-in-out infinite;
+  background: radial-gradient(circle at center,
+    #0F074A 100% 
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes nucleusCycle {
+  0% {
+    background: radial-gradient(circle at center,
+      #0F074A 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center,
+      #5F9C80 10%,
+      #7467BF 30%,
+      #374486 60%,
+      #0F074A 100%);
+  }
+  100% {
+    background: radial-gradient(circle at center,
+      #0F074A 100%);
+  }
 }
 @keyframes nucleusFlow4 {
   0% { background-size: 100%; }
@@ -175,7 +202,7 @@
           0%{ transform: scale(0.8); opacity: 0 };
           100%{ transform: scale(1); opacity: 1 };
         }
-.zoomInWord{
+/*.zoomInWord{
   animation: 
        zoomIn 0.5s ease-out forwards,
 
@@ -183,6 +210,21 @@
 .animate-zoomInWord {
   animation: zoomInWord 0.5s ease-out forwards !important;
 }
+  */
+@keyframes zoomInWord {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-zoomInWord {
+  animation: zoomInWord 0.5s ease-out forwards;
+}
+
 .bg-shine{
    animation: shine 3s infinite linear;
     animation: wave 0.5s infinite ease-in-out;
@@ -218,6 +260,7 @@
   background-size: cover;
   background-position: top;
 }
+/*Workshop & talk*/
 .bg-hero-gradient2 {
   background: radial-gradient(
     circle at center,
@@ -228,9 +271,54 @@
     #374486 35%,
     #0F074A 50%
   );
-  background-size: cover;
-  background-position: top;
+  /*background-size: cover;
+  background-position: top;*/
+  background-size: 100%;
+  background-position: center;
+
+  animation: sunPulse 4s ease-in-out infinite;
 }
+@keyframes sunPulse {
+  0% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 115%;
+    background-position: 48% 52%;
+  }
+  100% {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+/*For mobile*/
+@keyframes sunPulseMobile {
+  0%, 100% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 125%;
+    background-position: 50% 50%;
+  }
+}
+.bg-sunmobile {
+  background: radial-gradient(circle at center,
+    #5F9C80 3%,
+    #7467BF 8%,
+    #50C2D9 15%,
+    #7467BF 22%,
+    #374486 35%,
+    #0F074A 50%
+  );
+  background-size: 100%;
+  background-position: center;
+  animation: sunPulseMobile 4s ease-in-out infinite;
+}
+
+
+
 .bg-hero-gradient3 {
   background: radial-gradient(
     circle at center,
@@ -263,7 +351,36 @@
 .backface-visible {
   backface-visibility: visible;
 }
-
+.bg-hero-gradientf {
+  background: radial-gradient(circle at center, #0F074A 100%); /* Start: full dark blue */
+  animation: revealNucleus 4s ease-in-out infinite;
+  background-size: cover;
+  background-position: top;
+}
+@keyframes revealNucleus {
+  0% {
+    background: radial-gradient(circle at center, #0F074A 100%);
+  }
+  40% {
+    background: radial-gradient(circle at center, 
+      #0F074A 70%, 
+      #374486 90%
+    );
+  }
+  60% {
+    background: radial-gradient(circle at center,
+      #5F9C80 5%,  
+      #7467BF 12%,  
+      #50C2D9 22%,  
+      #7467BF 35%,  
+      #374486 50%,  
+      #0F074A 65%
+    );
+  }
+  100% {
+    background: radial-gradient(circle at center, #0F074A 100%);
+  }
+}
 /* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
