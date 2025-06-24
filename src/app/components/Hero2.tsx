@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Audiowide, VT323, Bebas_Neue, IBM_Plex_Mono } from 'next/font/google';
-//import Image from 'next/image';
+import Image from 'next/image';
 const ibmPlexMono = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 const vt323 = VT323({ weight: '400', subsets: ['latin'] });
@@ -42,14 +42,66 @@ export default function Hero2() {
       </div>
 
       {/* Title */}
-      <motion.h1
+      {/* <motion.h1
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1.05 }}
         transition={{ duration: 1 }}
         className={`text-[clamp(72px,20vw,240px)] font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent ${audiowide.className}`}
       >
         PRIM.E
-      </motion.h1>
+      </motion.h1> */}
+      {/* <motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  whileInView={{ opacity: 1, scale: 1.05 }}
+  transition={{ duration: 1 }}
+  className="flex justify-center items-center"
+>
+  <Image
+    src="/images/prime-logo.png"
+    alt="PRIM.E Logo"
+    width={800}
+    height={800}
+    priority
+    className="w-[220px] sm:w-[300px] md:w-[400px] lg:w-[480px] xl:w-[520px] h-auto object-contain"
+  />
+</motion.div> */}
+{/* <motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  whileInView={{ opacity: 1, scale: 1.05 }}
+  transition={{ duration: 1 }}
+  className="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-[480px] lg:max-w-[540px] xl:max-w-[600px] mx-auto"
+>
+  <Image
+    src="/images/prime-logo.png"
+    alt="PRIM.E Logo"
+    width={800}
+    height={800}
+    priority
+    className="w-full h-auto object-contain"
+  />
+</motion.div> */}
+<div className="relative flex justify-center items-center w-full max-w-[90vw] sm:max-w-[600px] mx-auto">
+  {/* Background logo behind text */}
+  <Image
+    src="/images/Primeimg.png"
+    alt="PRIM.E Logo BG"
+    width={700}
+    height={700}
+    priority
+    className="absolute inset-0 w-full h-auto opacity-45 object-contain pointer-events-none"
+  />
+
+  {/* Foreground animated text */}
+  <motion.h1
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1.05 }}
+    transition={{ duration: 1 }}
+    className={`relative z-10 text-[clamp(72px,20vw,240px)] font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent ${audiowide.className}`}
+  >
+    PRIM.E
+  </motion.h1>
+</div>
+
       
 {/* <motion.div
   initial={{ opacity: 0, scale: 0.8 }}
