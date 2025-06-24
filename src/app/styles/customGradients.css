@@ -1,0 +1,32 @@
+/*.bg-diamond-shape {
+  background: radial-gradient(35.56% 50% at 50% 50%, 
+    #2F5A49 7.09%, 
+    #49426E 18.45%, 
+    #2D6C7B 36.32%, 
+    #463F6E 51.44%, 
+    #2A3156 66.21%, 
+    #040218 91.41%
+  );
+}
+*/
+/*.bg-diamond-shape {
+  background: radial-gradient(closest-side at 50% 50%, 
+    #2F5A49 0%, 
+    #49426E 25%, 
+    #2D6C7B 50%, 
+    #463F6E 75%, 
+    #040218 100%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}*/
+.bg-diamond-shape {
+  background: radial-gradient(35.56% 60% at 50% 50%, 
+    #2F5A49 0%, 
+    #49426E 20%, 
+    #2D6C7B 40%, 
+    #463F6E 60%, 
+    #2A3156 80%, 
+    #040218 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

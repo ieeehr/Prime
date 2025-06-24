@@ -520,3 +520,18 @@
     @apply bg-background text-foreground;
   }
 } */
+
+/*Contact bg-black*/
+.bg-cont-gradient {
+  background: radial-gradient(
+    35.56% 50% at 50% 50%,
+    #3F755D 7.09%,
+    #49426E 18.45%,
+    #368797 36.32%,
+    #463F6E 51.44%,
+    #2A3156 66.21%,
+    #040218 91.41%
+  );
+  background-size: cover;
+  background-position: center;
+}

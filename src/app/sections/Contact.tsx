@@ -11,18 +11,46 @@ export default function Contact() {
   const contacts = [
     { role: "IEEE GECT SB CHAIR", name: "Pavithra S", phone: "8075613378" },
     { role: "RAS CHAIR", name: "Meghna R", phone: "9447472837" },
-    { role: "RAS SECRETARY", name: "Sreehari M", phone: "8301962849" },
-    { role: "RAS VICE CHAIR", name: "Adithyan V", phone: "8129887185" },
+    { role: "RAS VICE CHAIR", name: "Adithyan V", phone: "8301962849" },
+    { role: "RAS SECRETARY", name: "Sreehari M", phone: "8129887185" },
   ];
 
-  const socialIcons = [
+  /*const socialIcons = [
     { icon: Instagram, color: "text-pink-400" },
     { icon: Linkedin, color: "text-blue-400" },
     { icon: Phone, color: "text-green-400" },
     { icon: Mail, color: "text-red-400" },
     { icon: MessageCircle, color: "text-green-400" },
     { icon: Facebook, color: "text-blue-500" },
-  ];
+  ];*/
+  const socialIcons = [
+  {
+    icon: Instagram,
+    color: "text-pink-400",
+    url: "https://www.instagram.com/ieeerassbgectcr/",
+  },
+  {
+    icon: Linkedin,
+    color: "text-blue-400",
+    url: "https://www.linkedin.com/company/ieee-sb-gect/",
+  },
+  {
+    icon: Mail,
+    color: "text-red-400",
+    url: "mailto:ieeerassbgect@gmail.com",
+  },
+  {
+    icon: MessageCircle,
+    color: "text-green-400",
+    url: "https://chat.whatsapp.com/Cte9cjphGKy1qjmNchj631", // or WhatsApp
+  },
+  {
+    icon: Facebook,
+    color: "text-blue-500",
+    url: "https://www.facebook.com/ieeesbgectcr/",
+  },
+];
+
 
   return (
     <section id="contact" className="py-20 relative text-white bg-gradient-to-b from-[#0f074a] to-[#050021] overflow-hidden">
@@ -39,14 +67,20 @@ export default function Contact() {
         {/* Social Icons */}
         <div className="flex justify-center items-center flex-wrap gap-6 mb-8">
           {socialIcons.map((social, i) => (
-            <motion.button
+            // <motion.button </motion.button>
+              <motion.a
               key={i}
+              href={social.url} // ✅ The link for this icon
+      target="_blank"
+      rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
               className={`p-3 bg-white/5 rounded-full border border-white/10 hover:bg-white/10 transition-colors ${social.color}`}
+              
             >
               <social.icon className="w-6 h-6" />
-            </motion.button>
+            </motion.a>
+            
           ))}
         </div>
 

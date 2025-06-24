@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion';
 import SpeakerCard from '../components/Speaker1';
 import { IBM_Plex_Mono, Audiowide } from 'next/font/google';
+import '../styles/customGradients.css';
 
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 
 export default function Talks() {
-  const speakers = [
+  /*const speakers = [
     {
       name: 'Dr. A. R. Rao',
       topic: 'Space Robotics',
@@ -29,10 +30,23 @@ export default function Talks() {
       topic: 'Smart EVs',
       image: '/speakers/speaker4.jpg',
     },
+  ];*/
+  const speakers = [
+    {
+      name: 'Amrita Jiju',
+      topic: 'Agentic AI and RAG',
+      image: '/speakers/Amrita.jpeg',
+    },
+    {
+      name: 'Alosh Denny',
+      topic: 'Reinforcement Learning',
+      image: '/speakers/Alosh Denny.jpeg',
+    },
+    
   ];
-
+/*bg-hero-gradient2*/
   return (
-    <section id="talk sessions" className="relative py-20 px-4 text-white bg-hero-gradient2 overflow-hidden">
+    <section id="talk sessions" className="relative py-20 px-4 text-white bg-diamond-shape overflow-hidden">
       {/* Moving banners */}
       <div className="absolute top-4 left-0 right-0 z-10">
         <motion.div
@@ -65,7 +79,7 @@ export default function Talks() {
       </motion.h2>
 
       {/* Speaker grid */}
-      <div className={`relative z-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto ${ibmPlexMono.className}`}>
+      <div className={`relative z-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto ${audiowide.className}`}>
         {speakers.map((speaker, i) => (
           <SpeakerCard
             key={i}
@@ -78,3 +92,4 @@ export default function Talks() {
     </section>
   );
 }
+/*${ibmPlexMono.className}*/
