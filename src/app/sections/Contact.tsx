@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Instagram, Linkedin, Mail, MessageCircle, Facebook, Phone } from 'lucide-react';
+import { Instagram, Linkedin, Mail, MessageCircle, Facebook} from 'lucide-react';
 import { Audiowide, Orbitron } from 'next/font/google';
 
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });

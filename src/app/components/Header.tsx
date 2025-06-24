@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Audiowide, Bebas_Neue } from 'next/font/google';
+import {Bebas_Neue } from 'next/font/google';
 import { Menu, X } from 'lucide-react'; // uses Lucide icons
 import Image from 'next/image';
 const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-bebas' });
-const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
+//const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 
 const navLinks = [
   'Home',
@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     // <header className="fixed  top-0 left-0 w-full z-50 bg-[rgba(15,7,74,0.9)] backdrop-blur-md px-6 py-3 flex items-center justify-between">
-    <header className="fixed top-0 left-0 w-full z-50 h-16 sm:h-20 bg-[rgba(15,7,74,0.9)] backdrop-blur-md px-6 flex items-center justify-between">
+     <header className="fixed top-0 left-0 w-full z-50 h-16 sm:h-20 bg-[rgba(15,7,74,0.9)] backdrop-blur-md px-6 flex items-center justify-between"> 
 
       {/* Logo */}
       {/* <div className={`text-3xl text-white ${audiowide.className}`}>PRIM.E</div> */}

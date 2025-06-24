@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Audiowide, VT323, Bebas_Neue, IBM_Plex_Mono } from 'next/font/google';
-import Image from 'next/image';
+//import Image from 'next/image';
 const ibmPlexMono = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 const vt323 = VT323({ weight: '400', subsets: ['latin'] });

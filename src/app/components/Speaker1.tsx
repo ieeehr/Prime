@@ -1,9 +1,9 @@
 'use client';
 import Image from "next/image";
-import { IBM_Plex_Mono, Audiowide } from 'next/font/google';
+import { IBM_Plex_Mono } from 'next/font/google';
 import { motion } from 'framer-motion';
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
-const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
+//const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 type SpeakerCardProps = {
   name: string;
   topic: string;
