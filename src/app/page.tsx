@@ -1,4 +1,3 @@
-import Header from './components/Header'
 import Future from './components/Future'
 import About from './sections/Aboutprime'
 import Aboutieee from './sections/AboutIeee'
@@ -9,10 +8,11 @@ import Contact from './sections/Contact'
 import Hero2 from './components/Hero2'
 import CountdownTimer from './components/CountdownTimer'
 import LogoSlider from './components/LogoSlider'
+import Navbar from './components/Navbar'
 export default function Page() {
   return (
     <>
-      <Header></Header>
+      <Navbar></Navbar>
       <Hero2></Hero2>
       <Future></Future>
       <About></About>

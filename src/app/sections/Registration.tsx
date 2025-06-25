@@ -14,19 +14,22 @@ export default function Registration() {
       type: 'RAS Member',
       price: '₹499.00',
       gradient: 'from-green-500 to-emerald-500',
-      url:"https://makemypass.com/event/prime?ticket_id=1316d586-3d46-49aa-a426-2fa5fbf4eead",
+      //url:"https://makemypass.com/event/prime?ticket_id=1316d586-3d46-49aa-a426-2fa5fbf4eead",
+      url:"https://makemypass.com/event/prime",
     },
     {
       type: 'IEEE Member',
       price: '₹699.00',
       gradient: 'from-blue-500 to-cyan-500',
-      url:"https://makemypass.com/event/prime?ticket_id=e7cb656d-6261-47ad-bc00-834f7dc536ff",
+      url:"https://makemypass.com/event/prime",
+      //url:"https://makemypass.com/event/prime?ticket_id=e7cb656d-6261-47ad-bc00-834f7dc536ff",
     },
     {
       type: 'Non-IEEE Member',
       price: '₹899.00',
       gradient: 'from-purple-500 to-pink-500',
-      url:"https://makemypass.com/event/prime?ticket_id=cc44b5a1-c090-465b-9790-cf781038beff"
+      url:"https://makemypass.com/event/prime",
+      //url:"https://makemypass.com/event/prime?ticket_id=cc44b5a1-c090-465b-9790-cf781038beff"
     },
   ];
 
@@ -36,6 +39,10 @@ export default function Registration() {
     '2x competitions',
     '1x expo',
     '1x cultural',
+    `1x Ice breaking session `,
+    `Lazer maze (3 free chances)`,
+
+
   ];
 
   return (

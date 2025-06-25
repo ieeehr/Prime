@@ -60,8 +60,8 @@ const orbitron = Orbitron({ subsets: ['latin'], weight: '600' });
 const logos = [
   '/logos/logo1.png',
   '/logos/logo2.png',
+  //'/logos/logo3.png',
   '/logos/logo3.png',
-  '/logos/logo4.png',
   // Add more logo paths
 ];
 
