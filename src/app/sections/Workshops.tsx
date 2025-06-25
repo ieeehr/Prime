@@ -38,17 +38,17 @@ const workshops = [
   {
     title: 'Obstacle Avoiding Robot',
     tag: 'Robotics',
-    image: '/workshops/Obst.png',
+    image: '/workshops/obst.jpg',
   },
   {
     title: ' Baja Workshop',
     tag: 'Automotive Engineering',
-    image: '/workshops/Baja.png',
+    image: '/workshops/baja.jpg',
   },
   {
     title: 'Embedded Systems',
     tag: 'Electronics',
-    image: '/workshops/ESe.png',
+    image: '/workshops/eSe.jpg',
   },
   {
     title: 'AI in Robotics',

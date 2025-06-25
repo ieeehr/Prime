@@ -48,7 +48,7 @@ export default function Talks() {
   return (
     <section id="talk sessions" className="relative py-20 px-4 text-white bg-diamond-shape overflow-hidden">
       {/* Moving banners */}
-      <div className="absolute top-4 left-0 right-0 z-10">
+      <div className="relative top-4 left-0 right-0 z-10 overflow-hidden">
         <motion.div
           animate={{ x: ['-100%', '0%'] }}
           transition={{ repeat: Infinity, duration: 25, ease: 'linear' }}
@@ -68,12 +68,37 @@ export default function Talks() {
           </div>
         </motion.div>
       </div>
+      {/* <div className="relative top-4 left-0 right-0 z-10">
+  <div className="overflow-hidden w-full">
+    <motion.div
+      animate={{ x: ['-100%', '0%'] }}
+      transition={{ repeat: Infinity, duration: 25, ease: 'linear' }}
+      className="bg-white/10 py-2"
+    >
+      <div className={`inline-block whitespace-nowrap text-sm sm:text-base font-medium ${ibmPlexMono.className}`}>
+        talk sessions • tech insights • innovation • talk sessions • tech insights • innovation • talk sessions • tech insights • innovation •{' '.repeat(20)}
+      </div>
+    </motion.div>
+  </div>
+
+  <div className="overflow-hidden w-full mt-2">
+    <motion.div
+      animate={{ x: ['0%', '-100%'] }}
+      transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+      className="bg-white/10 py-2"
+    >
+      <div className={`inline-block whitespace-nowrap text-sm sm:text-base font-medium ${ibmPlexMono.className}`}>
+        speakers • prim.e • discussions • future • speakers • prim.e • discussions • future • speakers • prim.e • discussions • future •{' '.repeat(20)}
+      </div>
+    </motion.div>
+  </div>
+</div> */}
 
       {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className={`text-4xl md:text-5xl font-bold mb-12 text-center relative z-20 ${audiowide.className}`}
+        className={`text-4xl md:text-5xl font-bold mb-12 mt-20 text-center relative z-20 ${audiowide.className}`}
       >
         Talk Sessions
       </motion.h2>

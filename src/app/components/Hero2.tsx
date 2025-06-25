@@ -129,7 +129,7 @@ export default function Hero2() {
   transition={{ duration: 1, delay: 0.6 }}
   className={`mt-1 text-2xl sm:text-3xl md:text-3xl tracking-wider text-white font-extrabold ${ibmPlexMono.className}`}
 >
-  BY IEEE RAS SB GECT
+  BY IEEE RAS SBC GECT
 </motion.div>
 
       {/* Date Box */}
