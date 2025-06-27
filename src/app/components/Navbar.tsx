@@ -19,6 +19,7 @@ const navLinks = [
   'About PRIM.E',
   'About IEEE SB GECT',
   'Workshops',
+  'Competitions & Informals',
   'Talk Sessions',
   'Registration',
   'Contact',
@@ -73,7 +74,7 @@ export default function Navbar() {
               key={i}
               href={`#${text.toLowerCase()}`}
               onClick={() => setIsOpen(false)}
-              className={`text-lg text-white hover:underline ${bebas.className}`}
+              className={`md:text-xl text-lg text-white hover:underline ${bebas.className}`}
             >
               {text}
             </Link>

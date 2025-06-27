@@ -48,18 +48,18 @@ const workshops = [
   {
     title: 'Embedded Systems',
     tag: 'Electronics',
-    image: '/workshops/eSe.jpg',
+    image: '/workshops/ese.jpg',
   },
   {
-    title: 'AI in Robotics',
-    tag: 'Vision',
-    image: '/images/workshop4.png',
+    title: 'Ethical hacking',
+    tag: 'Cyber security',
+    image: '/workshops/Cybersecurity.jpg',
   },];
 /* bg-hero-gradient2 */
   return (
     <section id="workshops" className="relative w-full bg-diamond-shape sm:bg-sunmobile py-16 px-4 overflow-hidden text-white">
       {/* Cross banners */}
-      <div className="absolute top-4 left-0 right-0 z-10">
+      {/* <div className="absolute top-4 left-0 right-0 z-10">
         <motion.div
           animate={{ x: ['-100%', '0%'] }}
           transition={{ repeat: Infinity, duration: 25, ease: 'linear' }}
@@ -78,7 +78,43 @@ const workshops = [
             prim.e • workshops • prim.e • workshops •prim.e • workshops • prim.e • workshops •prim.e • workshops • prim.e • workshops •{' '.repeat(20)}
           </div>
         </motion.div>
+      </div> */}
+      <div className="relative top-4 left-0 right-0 z-10 w-full space-y-2">
+  {/* Top Banner — Scroll Left */}
+  <div className="overflow-hidden bg-white/10">
+    <motion.div
+      animate={{ x: ['0%', '-100%'] }}
+      transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
+      className="flex whitespace-nowrap"
+    >
+      <div className={`flex items-center min-w-fit text-sm sm:text-base font-medium ${ibmPlexMono.className}`}>
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="mr-12">
+            technical workshops • technical workshops • technical workshops • technical workshops •
+          </span>
+        ))}
       </div>
+    </motion.div>
+  </div>
+
+  {/* Bottom Banner — Scroll Right */}
+  <div className="overflow-hidden bg-white/10">
+    <motion.div
+      animate={{ x: ['-100%', '0%'] }}
+      transition={{ repeat: Infinity, duration: 22, ease: 'linear' }}
+      className="flex whitespace-nowrap"
+    >
+      <div className={`flex items-center min-w-fit text-sm sm:text-base font-medium ${ibmPlexMono.className}`}>
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="mr-12">
+            prim.e • workshops • prim.e • workshops • prim.e • workshops • prim.e • workshops •
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</div>
+
 
       {/* Section Title */}
       <motion.h2

@@ -9,6 +9,9 @@ import Hero2 from './components/Hero2'
 import CountdownTimer from './components/CountdownTimer'
 import LogoSlider from './components/LogoSlider'
 import Navbar from './components/Navbar'
+//import EventsCarousel from './components/Talkevt'
+import EventsCarousel from './sections/Comp'
+import Footer from './components/footer'
 export default function Page() {
   return (
     <>
@@ -18,11 +21,15 @@ export default function Page() {
       <About></About>
       <Aboutieee></Aboutieee>
       <Workshops></Workshops>
+      <EventsCarousel></EventsCarousel>
       <Talks1></Talks1>
+      
       <Registration></Registration>
       <Contact></Contact>
       <LogoSlider></LogoSlider>
       <CountdownTimer></CountdownTimer>
+      <Footer></Footer>
+  
       
     </>
   )

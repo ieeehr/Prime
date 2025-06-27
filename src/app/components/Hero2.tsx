@@ -7,16 +7,55 @@ const ibmPlexMono = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 const vt323 = VT323({ weight: '400', subsets: ['latin'] });
 const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'] });
+//import useBannerSpeed from '../hooks/useBannerspeed'; // adjust path as needed
+//const speed = useBannerSpeed();
 
 export default function Hero2() {
+  //const speed = useBannerSpeed();
   return (
     <section
       id="home"
       className="min-h-screen flex flex-col justify-center items-center text-center px-4 py-20 bg-hero-gradientf text-white"
     >
       {/* Moving banners */}
-      <div className="w-full max-w-[200vw] overflow-hidden flex flex-col gap-2 mb-1 z-20">
-        {/* Top banner */}
+      <div className="w-full overflow-hidden flex flex-col gap-2 z-20 mb-1">
+  {/* Top Banner - Scroll Right */}
+  <div className="overflow-hidden bg-white/10">
+    <motion.div
+      animate={{ x: ['-100%', '0%'] }}
+      transition={{ repeat: Infinity, duration: 10, ease: 'linear' }}
+      className="flex whitespace-nowrap"
+    >
+      <div className={`flex items-center min-w-fit text-sm sm:text-base font-bold text-white ${ibmPlexMono.className}`}>
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="mr-12">
+            national level robotics event • national level robotics event • national level robotics event • national level robotics event •
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+
+  {/* Bottom Banner - Scroll Left */}
+  <div className="overflow-hidden bg-white/10">
+    <motion.div
+      animate={{ x: ['0%', '-100%'] }}
+      transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
+      className="flex whitespace-nowrap"
+    >
+      <div className={`flex items-center min-w-fit text-sm sm:text-base font-medium text-white ${ibmPlexMono.className}`}>
+        {[...Array(2)].map((_, i) => (
+          <span key={i} className="mr-12">
+            prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e •
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</div>
+
+      {/* <div className="w-full max-w-[200vw] overflow-hidden flex flex-col gap-2 mb-1 z-20">
+        
         <div className="relative overflow-x-hidden">
           <motion.div
             animate={{ x: ['-100%', '0%'] }}
@@ -29,7 +68,7 @@ export default function Hero2() {
           </motion.div>
         </div>
 
-        {/* Bottom banner */}
+        
         <motion.div
           animate={{ x: ['0%', '-100%'] }}
           transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
@@ -39,7 +78,7 @@ export default function Hero2() {
             prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • prim.e • {' '.repeat(70)}
           </div>
         </motion.div>
-      </div>
+      </div> */}
 
       {/* Title */}
       {/* <motion.h1

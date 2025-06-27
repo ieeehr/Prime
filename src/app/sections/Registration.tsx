@@ -2,8 +2,8 @@
 //import Link from 'next/link';
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import { VT323, Audiowide, Orbitron } from 'next/font/google';
-
+import { VT323, Audiowide, Orbitron,IBM_Plex_Mono } from 'next/font/google';
+const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
 const vt323 = VT323({ weight: '400', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 const orbitron = Orbitron({ weight: '900', subsets: ['latin'] });
@@ -12,22 +12,27 @@ export default function Registration() {
   const plans = [
     {
       type: 'RAS Member',
-      price: '₹499.00',
-      gradient: 'from-green-500 to-emerald-500',
+      price: '₹599.00',
+      //gradient: 'from-green-500 to-emerald-500',
+      gradient:'from-[#FFD700] to-[#FFA500]',
+
       //url:"https://makemypass.com/event/prime?ticket_id=1316d586-3d46-49aa-a426-2fa5fbf4eead",
       url:"https://makemypass.com/event/prime",
     },
     {
       type: 'IEEE Member',
-      price: '₹699.00',
-      gradient: 'from-blue-500 to-cyan-500',
+      price: '₹799.00',
+      //gradient: 'from-blue-500 to-cyan-500',
+      gradient: ' from-[#001f3f] to-[#003366]',
+      
       url:"https://makemypass.com/event/prime",
       //url:"https://makemypass.com/event/prime?ticket_id=e7cb656d-6261-47ad-bc00-834f7dc536ff",
     },
     {
       type: 'Non-IEEE Member',
-      price: '₹899.00',
-      gradient: 'from-purple-500 to-pink-500',
+      price: '₹999.00',
+      //radient: 'from-purple-500 to-pink-500',
+      gradient: 'from-[#8B0000] to-[#FF0000]',
       url:"https://makemypass.com/event/prime",
       //url:"https://makemypass.com/event/prime?ticket_id=cc44b5a1-c090-465b-9790-cf781038beff"
     },
@@ -41,13 +46,51 @@ export default function Registration() {
     '1x cultural',
     `1x Ice breaking session `,
     `Lazer maze (3 free chances)`,
+    `Lunch for both days`,
 
 
   ];
 
-  return (
+  return (<>
     <section id="registration" className="py-20 relative overflow-hidden text-white bg-black">
       {/* Background Image */}
+      <div className="relative top-0 z-10 w-full space-y-2 mb-16">
+       <div className="overflow-hidden w-full bg-white/10">
+          <motion.div
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
+            className="flex whitespace-nowrap"
+          >
+            <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
+              {[...Array(2)].map((_, i) => (
+                <span key={i} className="mr-12">
+                  • Registration will be live soon • Stay tuned for updates • Limited slots available •
+
+      
+      
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      
+        {/* Second Banner - Right Scroll */}
+        <div className="overflow-hidden w-full bg-white/10">
+          <motion.div
+            animate={{ x: ['-100%', '0%'] }}
+            transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
+            className="flex whitespace-nowrap"
+          >
+            <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
+              {[...Array(2)].map((_, i) => (
+                <span key={i} className="mr-12">
+                  Early bird ticket price below • Grab your pass early • Best deal before it’s gone 
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </div>
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none brightness-200">
         {/* <img
           src="/images/robot-head.png"
@@ -55,7 +98,7 @@ export default function Registration() {
           className="w-full h-full object-contain"
         /> */}
         <Image
-    src="/images/robot-head.png"
+    src="/images/Reg logo.jpeg"
     alt="Robot Head"
     fill
     className="object-contain"
@@ -154,5 +197,5 @@ export default function Registration() {
         </div>
       </div>
     </section>
-  );
+  </>);
 }

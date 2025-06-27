@@ -20,7 +20,7 @@ export default function Aboutieee(){
                 Being the very first technical society student branch of the institution, the SB has played a very vital
                 and crucial role in the development of research and technology in the institution. The SB has evolved
                 into being accommodative of all fields of interests apart from science and technology. As amazing as
-                it&apos;s past, with 8 societies, 35 awards and 200+ events conducted, the SB continues to be one of the top
+                it&apos;s past, with 9 societies and 1 affinity group, 35 awards and 200+ events conducted, the SB continues to be one of the top
                 tier SBs of the IEEE Kerala Section, courtesy to it&apos;s consistently top-notch activities.
               </p>
             </div>

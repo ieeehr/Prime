@@ -55,13 +55,18 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Orbitron } from 'next/font/google';
 
-const orbitron = Orbitron({ subsets: ['latin'], weight: '600' });
+const orbitron = Orbitron({ subsets: ['latin'], weight: '700' });
 
 const logos = [
   '/logos/logo1.png',
   '/logos/logo2.png',
   //'/logos/logo3.png',
   '/logos/logo3.png',
+  '/images/hlogos/logo1.png',
+  '/images/hlogos/logo3.png',
+  '/logos/evolve.png',
+  '/logos/sinro.jpeg',
+  '/logos/lenient.jpg',
   // Add more logo paths
 ];
 
@@ -78,9 +83,14 @@ export default function LogoSlider() {
   return (
     <section className="bg-black text-white py-20 px-4 text-center">
       {/* Heading */}
-      <h2 className={`text-4xl sm:text-5xl font-bold mb-12 ${orbitron.className}`}>
+      <motion.h2 
+      initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      className={`text-4xl sm:text-5xl font-bold mb-12 ${orbitron.className}`}
+      >
         Logos
-      </h2>
+      </motion.h2>
 
       {/* Logo Frame */}
       {/* <div className="mx-auto min-w-[200px] min-h-[140px] w-[80vw] max-w-[400px] h-[200px] border-2 border-white rounded-xl flex items-center justify-center relative overflow-hidden"> */}
@@ -100,7 +110,7 @@ export default function LogoSlider() {
               alt={`Logo ${index + 1}`}
               width={160}
               height={80}
-              className="object-contain max-h-[180px]"
+              className="object-cover max-h-[180px]"
             />
           </motion.div>
         </AnimatePresence>

@@ -4,6 +4,7 @@
 import { Orbitron } from 'next/font/google';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const orbitron = Orbitron({ weight: '900', subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ export default function Future() {
       {/* Framed Box with Shine Text */}
       <div className="relative z-10 border-4 border-white rounded-md w-[90vw] max-w-6xl h-[300px] sm:h-[500px] md:h-[600px] bg-transparent">
         {/* GET TICKETS Button */}
+        <Link href={`#registration`}>
         <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
           <button
             className={`bg-white sm:text-2xl lg:text-4xl font-extrabold  text-[#130080] px-4 py-2 sm:px-6 sm:py-3 rounded hover:scale-105 transition-transform ${orbitron.className}`}
@@ -30,6 +32,7 @@ export default function Future() {
             GET TICKETS!
           </button>
         </div>
+        </Link>
 
         {/* Animated Text */}
         
