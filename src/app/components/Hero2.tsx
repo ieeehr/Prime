@@ -29,7 +29,8 @@ export default function Hero2() {
       <div className={`flex items-center min-w-fit text-sm sm:text-base font-bold text-white ${ibmPlexMono.className}`}>
         {[...Array(2)].map((_, i) => (
           <span key={i} className="mr-12">
-            national level robotics event • national level robotics event • national level robotics event • national level robotics event •
+            {/* national level robotics event • national level robotics event • national level robotics event • national level robotics event • */}
+            All Kerala level robotics event •All Kerala level robotics event •All Kerala level robotics event •All Kerala level robotics event •
           </span>
         ))}
       </div>

@@ -39,7 +39,7 @@ export default function Registration() {
   ];
 
   const features = [
-    '4x workshop',
+    '2x workshop',
     '1x talk session',
     '2x competitions',
     '1x expo',
