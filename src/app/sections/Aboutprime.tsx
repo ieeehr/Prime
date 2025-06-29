@@ -1,14 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 //import { Menu, X, Download, MapPin, Phone, Mail, Instagram, Linkedin, MessageCircle, Facebook } from "lucide-react"
-import { Download } from "lucide-react";
-import { Button } from "@/components/ui/button"
+//import { Download } from "lucide-react";
+//import { Button } from "@/components/ui/button"
 //import { useRef, useEffect } from "react";
 //import useInView from "../hooks/useInView";
 //import Image from "next/image";, Bebas_Neue, Orbitron, VT323,
 import { Audiowide,IBM_Plex_Mono } from "next/font/google";
 const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
-const ibmPlexMono1 = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
+//const ibmPlexMono1 = IBM_Plex_Mono({ weight: '600', subsets: ['latin'] });
 const audiowide = Audiowide({
   weight: "400",
   subsets: ["latin"],
@@ -58,10 +58,10 @@ export default function About(){
                 fosters innovation, collaboration, and prepares participants for the future of autonomous technology on
                 Earth and beyond.
               </p> */}
-              <Button className={`bg-white text-blue hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 ${ibmPlexMono1.className}`}>
+              {/* <Button className={`bg-white text-blue hover:bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 ${ibmPlexMono1.className}`}>
                 <Download className="mr-2 h-4 w-4" />
                 Download Brochure
-              </Button>
+              </Button> */}
             </div>
           </motion.div>
         </div>
