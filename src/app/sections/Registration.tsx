@@ -64,10 +64,7 @@ export default function Registration() {
             <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
               {[...Array(2)].map((_, i) => (
                 <span key={i} className="mr-12">
-                  • Registration will be live soon • Stay tuned for updates • Limited slots available •
-
-      
-      
+                  • Registration is now open • Early bird offer live now • Secure your spot today 
                 </span>
               ))}
             </div>
@@ -84,7 +81,7 @@ export default function Registration() {
             <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
               {[...Array(2)].map((_, i) => (
                 <span key={i} className="mr-12">
-                  Early bird ticket price below • Grab your pass early • Best deal before it’s gone 
+                  •Early bird ticket price below • Limited to First 20 tickets • Grab your pass early 
                 </span>
               ))}
             </div>
