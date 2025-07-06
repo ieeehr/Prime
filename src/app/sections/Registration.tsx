@@ -12,7 +12,7 @@ export default function Registration() {
   const plans = [
     {
       type: 'RAS Member',
-      price: '₹599.00',
+      price: '₹699.00',
       //gradient: 'from-green-500 to-emerald-500',
       gradient:'from-[#FFD700] to-[#FFA500]',
 
@@ -21,7 +21,7 @@ export default function Registration() {
     },
     {
       type: 'IEEE Member',
-      price: '₹799.00',
+      price: '₹899.00',
       //gradient: 'from-blue-500 to-cyan-500',
       gradient: ' from-[#001f3f] to-[#003366]',
       
@@ -30,7 +30,7 @@ export default function Registration() {
     },
     {
       type: 'Non-IEEE Member',
-      price: '₹999.00',
+      price: '₹1099.00',
       //radient: 'from-purple-500 to-pink-500',
       gradient: 'from-[#8B0000] to-[#FF0000]',
       url:"https://makemypass.com/event/prime",
@@ -64,7 +64,7 @@ export default function Registration() {
             <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
               {[...Array(2)].map((_, i) => (
                 <span key={i} className="mr-12">
-                  • Registration is now open • Early bird offer live now • Secure your spot today 
+                  • Early Bird Registration is closed • Regular registration is officially open • Limited to 100 tickets •
                 </span>
               ))}
             </div>
@@ -81,7 +81,7 @@ export default function Registration() {
             <div className={`flex items-center min-w-fit text-md sm:text-base font-large ${ibmPlexMono.className}`}>
               {[...Array(2)].map((_, i) => (
                 <span key={i} className="mr-12">
-                  •Early bird ticket price below • Limited to First 20 tickets • Grab your pass early 
+                  • Regular passes now available • Registration closes on 15th July • Secure your entry today •
                 </span>
               ))}
             </div>
