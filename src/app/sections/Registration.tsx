@@ -42,7 +42,6 @@ export default function Registration() {
     '2x workshop',
     '1x talk session',
     '2x competitions',
-    '1x expo',
     '1x cultural',
     `1x Ice breaking session `,
     `Lazer maze (3 free chances)`,

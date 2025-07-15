@@ -23,11 +23,11 @@ const events = [
     subtitle: ' Collaborative Innovation Sprint',
     image: '/events/Idea.jpeg',
   },
-  {
-    title: 'TECH EXPO',
-    subtitle: 'Interactive Tech Showcase',
-    image: '/events/expo.jpeg',
-  },
+  // {
+  //   title: 'TECH EXPO',
+  //   subtitle: 'Interactive Tech Showcase',
+  //   image: '/events/expo.jpeg',
+  // },
   
   {
     title: 'LAZER MAZE',
