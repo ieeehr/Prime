@@ -10,7 +10,7 @@ const orbitron1 = Orbitron({ subsets: ['latin'], weight: '400' });
 const audiowide = Audiowide({ subsets: ['latin'], weight: '400' });
 
 // const targetDate = new Date('2025-08-12T00:00:00');
-const targetDate = new Date('2025-07-19T00:00:00');
+const targetDate = new Date('2025-07-19T09:00:00');
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({

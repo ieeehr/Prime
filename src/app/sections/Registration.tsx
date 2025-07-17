@@ -2,8 +2,8 @@
 //import Link from 'next/link';
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import { VT323, Audiowide, Orbitron,IBM_Plex_Mono } from 'next/font/google';
-const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
+import { VT323, Audiowide, Orbitron} from 'next/font/google';
+//,IBM_Plex_Mono const ibmPlexMono = IBM_Plex_Mono({ weight: '400', subsets: ['latin'] });
 const vt323 = VT323({ weight: '400', subsets: ['latin'] });
 const audiowide = Audiowide({ weight: '400', subsets: ['latin'] });
 const orbitron = Orbitron({ weight: '900', subsets: ['latin'] });
@@ -53,8 +53,8 @@ export default function Registration() {
   return (<>
     <section id="registration" className="py-20 relative overflow-hidden text-white bg-black">
       {/* Background Image */}
-      <div className="relative top-0 z-10 w-full space-y-2 mb-16">
-       <div className="overflow-hidden w-full bg-white/10">
+      {/* <div className="relative top-0 z-10 w-full space-y-2 mb-16"> */}
+       {/* <div className="overflow-hidden w-full bg-white/10">
           <motion.div
             animate={{ x: ['0%', '-100%'] }}
             transition={{ repeat: Infinity, duration: 15, ease: 'linear' }}
@@ -68,10 +68,10 @@ export default function Registration() {
               ))}
             </div>
           </motion.div>
-        </div>
+        </div> */}
       
         {/* Second Banner - Right Scroll */}
-        <div className="overflow-hidden w-full bg-white/10">
+        {/* <div className="overflow-hidden w-full bg-white/10">
           <motion.div
             animate={{ x: ['-100%', '0%'] }}
             transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
@@ -85,8 +85,8 @@ export default function Registration() {
               ))}
             </div>
           </motion.div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none brightness-200">
         {/* <img
           src="/images/robot-head.png"
